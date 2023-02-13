@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comic Neue';
+    color: yellow;
 }    
 
 .container {
@@ -51,7 +52,6 @@ nav a {
     padding: 0 0.5rem;
     text-decoration: none;
     font-weight: bold;
-    color: yellow;
 }    
 
 nav a[href="#"] {
@@ -69,13 +69,14 @@ main {
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
 aside {
-    width: 200px;
+    width: 21%;
     background-color: rgba(0,0,0,0.9);
     border-top-right-radius: 5px;
+    align-self: stretch;
 }
 
 main img {
@@ -88,10 +89,10 @@ main img {
 
 section {
     background-color: rgba(0,0,0,0.9);
-    color: yellow;
     flex-grow: 1;
     padding: 1.5rem;
     border-top-left-radius: 5px;
+    max-width: 77%;
 }
 
 section>h3 {
