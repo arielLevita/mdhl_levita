@@ -2,12 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Comic Neue';
 }
 
 .container {
     width: 75%;
     position: relative;
     margin: 0 auto;
+}
+
+#banner-nav {
+    position: relative;
 }
 
 #banner {
@@ -23,12 +28,12 @@ nav {
     position: absolute;
     z-index: 1;
     right: 0;
-    top: 45px;
+    top: -15px;
 }
 
 nav a {
-    margin: 5px;
-    padding: 5px 15px;
+    margin: 3px;
+    padding: 5px 10px;
     text-decoration: none;
     font-weight: bold;
     border: 1px solid black;
@@ -56,7 +61,7 @@ main>h3 {
 aside {
     display: inline-block;
     vertical-align: top;
-    width: 15%;
+    width: 10vw;
     /* min-width: 150px; */
 }
 
@@ -64,8 +69,8 @@ main img {
     display: block;
     margin: 10px auto;
     width: 70%;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 7vw;
+    max-height: 7vw;
 }
 
 section {
