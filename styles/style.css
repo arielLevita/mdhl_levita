@@ -3,85 +3,100 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comic Neue';
-}
+}    
 
 .container {
     width: 75%;
-    position: relative;
     margin: 0 auto;
+    background-image: url(../assets/150682-beautiful-black-and-yellow-background-1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+
+header {
+    margin-bottom: 1rem;
+}    
+
+h1 {
+  font-size: 50px;
+  color: yellow;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 
-#banner-nav {
-    position: relative;
-}
 
 #banner {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     background-image: url(../assets/design1_image2.jpg);
     background-repeat: no-repeat;
     background-position-y: 30%;
     background-size: cover;
-}
+    margin-bottom: 0.5rem;
+}    
 
 nav {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: -15px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.9);
+    height: 3rem;
+    /* padding-left: 20px; */
+}    
 
 nav a {
     margin: 3px;
-    padding: 5px 10px;
+    padding: 0 0.5rem;
     text-decoration: none;
     font-weight: bold;
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px rgb(180, 180, 180);
-    background-color: rgb(68,114,196);
-    color: white;
-}
+    color: yellow;
+}    
 
 nav a[href="#"] {
-    background-color: rgb(112,173,71);
-}
+    background-color: yellow;
+    color: black;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}    
 
-h1 {
-  font-size: 50px;
-}
-
-main>h3 {
-    
-    text-align: center;
-    padding: 5px 0;
-    width: 100%;
-    border: 1px solid black;
+main {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 aside {
-    display: inline-block;
-    vertical-align: top;
-    width: 10vw;
-    /* min-width: 150px; */
+    width: 200px;
+    background-color: rgba(0,0,0,0.9);
+    border-top-right-radius: 5px;
 }
 
 main img {
     display: block;
     margin: 10px auto;
     width: 70%;
-    max-width: 7vw;
-    max-height: 7vw;
+    max-width: 70%;
+    max-height: 70%;
 }
 
 section {
-    width: 75%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 20px;
+    background-color: rgba(0,0,0,0.9);
+    color: yellow;
+    flex-grow: 1;
+    padding: 1.5rem;
+    border-top-left-radius: 5px;
 }
 
 section>h3 {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 section p {
