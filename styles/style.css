@@ -6,12 +6,13 @@
     color: rgb(255, 255, 107);
 }    
 
-.container {
+body {
     width: 75%;
     margin: 0 auto;
     background-image: url(../assets/150682-beautiful-black-and-yellow-background-1920x1080.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 75%;
+    background-position: top center;
 }    
 
 header {
