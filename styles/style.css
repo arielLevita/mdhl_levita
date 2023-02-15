@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Comic Neue';
+    font-family: 'Open Sans';
     color: rgb(255, 255, 107);
 }    
 
@@ -14,6 +14,9 @@ body {
     background-size: 75%;
     background-position: top center;
 }    
+
+
+/* HEADER */
 
 header {
     margin-bottom: 0.5rem;
@@ -71,6 +74,9 @@ nav a[href="#"] {
     -o-border-radius: 15px;
 }    
 
+
+/* MAIN */
+
 main {
     display: flex;
     justify-content: stretch;
@@ -113,6 +119,9 @@ article>p {
     text-indent: 20px;
 }
 
+
+/* RULES.HTML */
+
 article>ol>li:not(:first-child) {
     margin-top: 0.5rem;
 }
@@ -132,6 +141,9 @@ ul:last-child {
     left: 2rem;
     padding-right: 2rem;
 }
+
+
+/* SCHEDULE.HTML */
 
 table {
     margin: 2rem;
@@ -155,6 +167,48 @@ th, td {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
+/* REGISTRATION.HTML */
+
+fieldset {
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+legend {
+    padding: 0 0.5rem;
+}
+
+input {
+    margin: 0.5rem 0.25rem;
+    flex-grow: 1;
+    width: auto;
+    color:black;
+}
+
+input[type="radio"] {
+    flex-grow: initial;
+    margin-left: 20px;;
+}
+
+.form-row {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+label {
+    padding: 0 5px;
+}
+
+
+/* FORMATO - GENERALES */
 
 .text-center {
     text-align: center;
