@@ -106,7 +106,7 @@ section {
     border-top-left-radius: 10px;
 }
 
-section>h3 {
+section>h3, article>h3 {
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -143,7 +143,7 @@ ul:last-child {
 }
 
 
-/* SCHEDULE.HTML */
+/* GAME-INFORMATION.HTML */
 
 table {
     margin: 2rem;
@@ -158,6 +158,10 @@ th, td {
     padding: 7px;
 }
 
+#schedule-data {
+    margin-bottom: 2rem;
+}
+
 #schedule-data p {
     margin-bottom: 1rem;
 }
@@ -168,43 +172,100 @@ th, td {
     flex-wrap: wrap;
 }
 
+#schools {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.school-card {
+    flex-direction: row;
+    width: 300px;
+}
+
+
+iframe {
+    width: 300px;
+    height: 225px;
+    border: 0;
+}
+
 
 /* REGISTRATION.HTML */
 
 fieldset {
+    margin-top: 1rem;
     padding: 1rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 legend {
     padding: 0 0.5rem;
 }
 
-input {
+input, select, option {
     margin: 0.5rem 0.25rem;
     flex-grow: 1;
     width: auto;
     color:black;
 }
 
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
     flex-grow: initial;
     margin-left: 20px;;
 }
 
-.form-row {
+.form-row:not(select) {
     width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    padding: 0 5px;
+}
+
+.input-group {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-label {
-    padding: 0 5px;
+.buttons {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 50%;
+    height: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: azure;
+}
+
+input[type="submit"] {
+    background-color: rgb(58, 153, 58);
+}
+
+input[type="reset"] {
+    background-color: grey;
 }
 
 
@@ -232,4 +293,8 @@ label {
 
 .text-underline {
     text-decoration: underline;
+}
+
+.small-paragraph {
+    font-size: 0.75rem;
 }

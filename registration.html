@@ -23,7 +23,7 @@
         <a href="./index.html">Home</a>
         <a href="./about.html">About MDHL</a>
         <a href="./rules.html">Rules & Policies</a>
-        <a href="./schedule.html">Schedule</a>
+        <a href="./game-information.html">Game Information</a>
         <a href="#">Registration</a>
         <a href="./contact.html">Contact</a>
       </nav>
@@ -66,62 +66,258 @@
             </div>
 
             <div class="form-row">
-              <label for="birth-date">Birth Date (mm/dd/yyyy):</label>
-              <input type="date" id="birth-date" name="birth-date" required />
+              <div>
+                <label for="birth-date">Birth Date (mm/dd/yyyy):</label>
+                <input type="date" id="birth-date" name="birth-date" required />
+              </div>
 
-              <label id="gender">Gender:</label>
-              <input
-                type="radio"
-                name="gender"
-                aria-labelledby="gender"
-                value="female"
-              />Female
-              <input
-                type="radio"
-                name="gender"
-                aria-labelledby="gender"
-                value="male"
-              />Male
+              <div class="input-group">
+                <label id="gender">Gender:</label>
+                <div class="input-label">
+                  <input
+                    type="radio"
+                    name="gender"
+                    aria-labelledby="gender"
+                    value="female"
+                  />Female
+                </div>
+                <div class="input-label">
+                  <input
+                    type="radio"
+                    name="gender"
+                    aria-labelledby="gender"
+                    value="male"
+                  />Male
+                </div>
+              </div>
             </div>
 
             <div class="form-row">
               <label id="grade">Grade:</label>
-              <input
-                type="radio"
-                name="grade"
-                aria-labelledby="grade"
-                value="pre-school"
-              />
-              Pre-School<input
-                type="radio"
-                name="grade"
-                aria-labelledby="grade"
-                value="1st"
-              />1st<input
-                type="radio"
-                name="grade"
-                aria-labelledby="grade"
-                value="2nd"
-              />2nd<input
-                type="radio"
-                name="grade"
-                aria-labelledby="grade"
-                value="3rd"
-              />3rd<input
-                type="radio"
-                name="grade"
-                aria-labelledby="grade"
-                value="4th"
-              />4th<input
-                type="radio"
-                name="grade"
-                aria-labelledby="grade"
-                value="5th"
-              />5th
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="grade"
+                  aria-labelledby="grade"
+                  value="pre-school"
+                />
+                Pre-School
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="grade"
+                  aria-labelledby="grade"
+                  value="1st"
+                />1st
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="grade"
+                  aria-labelledby="grade"
+                  value="2nd"
+                />2nd
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="grade"
+                  aria-labelledby="grade"
+                  value="3rd"
+                />3rd
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="grade"
+                  aria-labelledby="grade"
+                  value="4th"
+                />4th
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="grade"
+                  aria-labelledby="grade"
+                  value="5th"
+                />5th
+              </div>
             </div>
           </fieldset>
-          <input type="submit" value="Submit" />
-          <input type="reset" />
+
+          <fieldset>
+            <legend>Which elementary school do you live near?</legend>
+            <p class="small-paragraph">
+              * if more than one, click the first and, holding the [Ctrl] key,
+              click the second one.
+            </p>
+            <div class="form-row">
+              <label for="school">Closest School:</label>
+              <select name="school" id="school" size="6" multiple required>
+                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                <option value="Greenbay">Greenbay</option>
+                <option value="Howard A Yeager">Howard A Yeager</option>
+                <option value="Marjorie P Hart">Marjorie P Hart</option>
+                <option value="North Elementary">North Elementary</option>
+                <option value="South Elementary">South Elementary</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              What position(s) do you normally play? (check all that apply)
+            </legend>
+            <div class="form-row">
+              <label id="position">Position:</label>
+              <div class="input-label">
+                <input
+                  type="checkbox"
+                  name="position"
+                  aria-labelledby="position"
+                  value="forward"
+                />Forward
+              </div>
+              <div class="input-label">
+                <input
+                  type="checkbox"
+                  name="position"
+                  aria-labelledby="position"
+                  value="midfield"
+                />Midfield
+              </div>
+              <div class="input-label">
+                <input
+                  type="checkbox"
+                  name="position"
+                  aria-labelledby="position"
+                  value="defense"
+                />Defense
+              </div>
+              <div class="input-label">
+                <input
+                  type="checkbox"
+                  name="position"
+                  aria-labelledby="position"
+                  value="goalkeeper"
+                />Goalkeepr
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Uniform</legend>
+            <div class="form-row">
+              <label id="uniform-size">Uniform Size:</label>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  aria-labelledby="uniform-size"
+                  value="Youth Small"
+                />
+                Youth Small
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  aria-labelledby="uniform-size"
+                  value="Youth Medium"
+                />
+                Youth Medium
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  aria-labelledby="uniform-size"
+                  value="Youth Large"
+                />
+                Youth Large
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  aria-labelledby="uniform-size"
+                  value="Small"
+                />
+                Small
+              </div>
+              <div class="input-label">
+                <input
+                  class="small-input"
+                  type="radio"
+                  name="uniform-size"
+                  aria-labelledby="uniform-size"
+                  value="Medium"
+                />
+                Medium
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  aria-labelledby="uniform-size"
+                  value="Large"
+                />
+                Large
+              </div>
+              <div class="input-label">
+                <input
+                  type="radio"
+                  name="uniform-size"
+                  aria-labelledby="uniform-size"
+                  value="YExtra-Large"
+                />
+                Extra-Large
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Permission to Play</legend>
+            <p>
+              I, the parent or guardian of the minor registrand, agree that the
+              registrant and I will abide by all the rules of the Mighty Ducks
+              Hockey League (MDHL). In recognizing the possibility of physical
+              injury associated with hockey and in consideration for the
+              "League" accepting the registrant for its hockey program
+              activities, I hereby release, discharge, and/or otherwise
+              indemnify MDHL, their employees and associated personnel and
+              volunteers, including the facilities used for practices and games,
+              against any claim by or on behalf of the registrant as a result of
+              the registrant's participation in the program and/or being
+              transported to or from MDHL sponsored activities, which
+              transportation.
+            </p>
+            <p>
+              By entering my name below, I hereby agree and authorize the above.
+              By entering my name below, I also acknowledge that I have read the
+              cancellation policy and agree to its terms.
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Parent/Guarding Agreement</legend>
+
+            <div class="form-row">
+              <label for="parent-name">Parent/Guardian Full Name:</label>
+              <input type="text" id="parent-name" name="parent-name" required />
+            </div>
+
+            <div class="form-row">
+              <label for="date">Date (mm/dd/yyyy):</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+          </fieldset>
+
+          <div class="buttons">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
         </form>
       </section>
     </main>
